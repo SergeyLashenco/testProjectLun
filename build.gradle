@@ -35,6 +35,16 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-params:5.6.2")
 }
 
+tasks.withType(Test){
+    systemProperties = System.properties
+}
+
+task lyn_tests (type: Test){
+   useJUnitPlatform {
+     includeTags 'web'
+   }
+}
+
 test {
 
     systemProperty "selenide.fastSetValue","true"
