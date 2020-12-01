@@ -5,8 +5,6 @@ import org.example.pages.ContinentRayPage;
 import org.example.pages.HomePage;
 import org.junit.jupiter.api.AfterEach;
 
-import java.nio.Buffer;
-
 import static com.codeborne.selenide.Selenide.closeWindow;
 import static com.codeborne.selenide.Selenide.open;
 
